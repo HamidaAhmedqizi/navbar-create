@@ -1,8 +1,8 @@
 import React from 'react';
-import { serviceDropdown } from './NavItems';
+import { serviceDropdown } from '../NavItems';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import '../components/Dropdown.css';
+import '../Dropdown/Dropdown.css'
 
 const Dropdown = () => {
     const [dropdown, setDropdown] = useState(false);

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "../components/Navbar.css";
+import '../Dropdown/Dropdown';
+import '../Navbar/Navbar.css'
 import { Link } from "react-router-dom";
-import { navItems } from "./NavItems";
-import Dropdown from "./Dropdown";
-// import { FaBarsStaggered } from "react-icons/fa6";
+import { navItems } from "../NavItems";
+import Dropdown from "../Dropdown/Dropdown";
 import { HiOutlineXMark } from "react-icons/hi2";
 
 const Navbar = () => {
