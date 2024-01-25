@@ -1,3 +1,5 @@
+import { IoChevronDownSharp } from "react-icons/io5";
+
 export const navItems = [
   {
     id: 1,
@@ -16,6 +18,7 @@ export const navItems = [
     title: "Services",
     path: "./services",
     cName: "nav-item",
+    icon: <IoChevronDownSharp />
   },
   {
     id: 4,

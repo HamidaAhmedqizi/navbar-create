@@ -2,9 +2,8 @@ import { useState } from "react";
 import "../components/Navbar.css";
 import { Link } from "react-router-dom";
 import { navItems } from "./NavItems";
-import Button from "./Button";
 import Dropdown from "./Dropdown";
-import { FaBarsStaggered } from "react-icons/fa6";
+// import { FaBarsStaggered } from "react-icons/fa6";
 import { HiOutlineXMark } from "react-icons/hi2";
 
 const Navbar = () => {
@@ -34,7 +33,9 @@ const Navbar = () => {
                   onMouseEnter={() => setDropdown(true)}
                   onMouseLeave={() => setDropdown(false)}
                 >
-                  <Link to={item.path}>{item.title}</Link>
+                  <div className="text___icon">
+                    <Link to={item.path}>{item.title}</Link> <span className="span__icon">{item.icon}</span>
+                  </div>
                   {dropdown && <Dropdown />}
                 </li>
               );
@@ -47,17 +48,56 @@ const Navbar = () => {
           })}
         </ul>
 
-        <div className="buttons_cont">
-          <button onClick={showingNav} className="bars__icon">
+        <button onClick={showingNav} className="bars__icon">
  
             {
-              isNavShowing ? <HiOutlineXMark /> : <FaBarsStaggered />
+              isNavShowing ? <HiOutlineXMark /> : <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <rect
+                x="2.75"
+                y="2.75"
+                width="7.5"
+                height="7.5"
+                rx="2.25"
+                stroke="#311F09"
+                stroke-width="1.5"
+              />
+              <rect
+                x="13.75"
+                y="2.75"
+                width="7.5"
+                height="7.5"
+                rx="2.25"
+                stroke="#311F09"
+                stroke-width="1.5"
+              />
+              <rect
+                x="2.75"
+                y="13.75"
+                width="7.5"
+                height="7.5"
+                rx="2.25"
+                stroke="#311F09"
+                stroke-width="1.5"
+              />
+              <rect
+                x="13.75"
+                y="13.75"
+                width="7.5"
+                height="7.5"
+                rx="3.75"
+                stroke="#FF8A00"
+                stroke-width="1.5"
+              />
+            </svg>
             }
 
           </button>
-
-          <Button />
-        </div>
       </nav>
     </>
   );
