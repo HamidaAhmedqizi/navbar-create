@@ -1,9 +1,12 @@
-import React from 'react'
+import BgHome from '../components/BgHome/BgHome';
 
 const Home = () => {
+
   return (
-    <div>Home</div>
+    <>
+      <BgHome />
+    </>
   )
 }
 
-export default Home
+export default Home;
