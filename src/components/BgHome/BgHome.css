@@ -1,0 +1,78 @@
+.swiper_container {
+    height: 860px;
+}
+
+.slider_container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_title_cont {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_bg {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.title_bg {
+    font-size: 68px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    max-width: 920px;
+    line-height: 1.25;
+}
+
+.btn_bg {
+    background-color: rgb(163, 123, 30);
+    border-radius: 10px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+    margin-top: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+}
+
+.btn_bg:hover {
+    opacity: 0.75;
+}
+
+.image_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.image_container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.line_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 / 0.7);
+}

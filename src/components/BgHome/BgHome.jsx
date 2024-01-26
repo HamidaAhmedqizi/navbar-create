@@ -35,7 +35,7 @@ const BgHome = () => {
         delay: 3000,
         disableOnInteraction: false,
       }}
-      className="heroSlider h-[600px] lg:h-[860px]"
+      className="swiper_container"
     >
       {slides.map((slide, index) => {
         const { title, bg, btnText } = slide;
@@ -43,7 +43,7 @@ const BgHome = () => {
         return (
           <SwiperSlide
             key={index}
-            className="swiper_container"
+            className="slider_container"
           >
             <div className="text_title_cont">
               <div className="text_bg">
