@@ -19,6 +19,10 @@
     align-items: center;
 }
 
+.text_title_cont a {
+    text-decoration: none;
+}
+
 .text_bg {
     text-align: center;
     text-transform: uppercase;

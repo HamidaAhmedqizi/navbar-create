@@ -1,0 +1,123 @@
+.nav_Header_container {
+    background-color: #c2c5aa;
+    padding: 0 2rem;
+}
+
+.nav_Header_bg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+}
+
+.nav_Header_left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav_Header_left .email {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon_num {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.icon_num .left_icon_phone {
+    color: #fff;
+    font-size: 18px;
+}
+
+.icon_num a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.nav_Header_right {
+    display: flex;
+    align-items: center;
+} 
+
+.nav_Header_right_BG {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #414833;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav_Header_left_email_icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.email_icon_left {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.earth_icon_right {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.language_right_text {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.select_language {
+    background-color: #414833;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.select_language option {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+@media(max-width: 610px) {
+
+    .nav_Header_bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+}
+
+@media(max-width: 480px) {
+
+    .nav_Header_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        height: 120px;
+    }
+
+    .nav_Header_right_BG {
+        margin-bottom: 20px;
+    }
+
+}

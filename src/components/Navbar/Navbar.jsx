@@ -1,16 +1,19 @@
 import { useState } from "react";
-import '../Dropdown/Dropdown';
-import '../Navbar/Navbar.css'
+import "../Dropdown/Dropdown";
+import "../Navbar/Navbar.css";
 import { Link } from "react-router-dom";
 import { navItems } from "../NavItems";
 import Dropdown from "../Dropdown/Dropdown";
 import { HiOutlineXMark } from "react-icons/hi2";
 
 const Navbar = () => {
-  
   const [dropdown, setDropdown] = useState(false);
 
   const [isNavShowing, setIsNavShowing] = useState(false);
+
+  const handleDropdown = () => {
+    setDropdown(!dropdown);
+  };
 
   const showingNav = () => {
     setIsNavShowing((prev) => !prev);
@@ -25,7 +28,7 @@ const Navbar = () => {
 
         <ul className={`${isNavShowing ? "nav-items block" : "nav-items"}`}>
           {navItems.map((item) => {
-            if (item.title === "Services") {
+            if (item.dropdownMenu) {
               return (
                 <li
                   key={item.id}
@@ -33,10 +36,11 @@ const Navbar = () => {
                   onMouseEnter={() => setDropdown(true)}
                   onMouseLeave={() => setDropdown(false)}
                 >
-                  <div className="text___icon">
-                    <Link to={item.path}>{item.title}</Link> <span className="span__icon">{item.icon}</span>
+                  <div className="text___icon" onClick={handleDropdown}>
+                    <Link to={item.path}>{item.title}</Link>
+                    <span className="span__icon">{item.icon}</span>
+                    {dropdown && <Dropdown data={item.dropdownMenu} />}
                   </div>
-                  {dropdown && <Dropdown />}
                 </li>
               );
             }
@@ -49,9 +53,10 @@ const Navbar = () => {
         </ul>
 
         <button onClick={showingNav} className="bars__icon">
- 
-            {
-              isNavShowing ? <HiOutlineXMark /> : <svg
+          {isNavShowing ? (
+            <HiOutlineXMark />
+          ) : (
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -95,9 +100,8 @@ const Navbar = () => {
                 stroke-width="1.5"
               />
             </svg>
-            }
-
-          </button>
+          )}
+        </button>
       </nav>
     </>
   );

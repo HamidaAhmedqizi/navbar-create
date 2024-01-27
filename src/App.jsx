@@ -8,11 +8,13 @@ import Services from './pages/Services'
 import Unity from './pages/Unity/Unity'
 import Ehtrade from './pages/Ehtrade/Ehtrade'
 import YusifMMC from './pages/YusifMMC/YusifMMC'
+import NavHeader from './components/NavHeader/NavHeader'
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <NavHeader />
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />

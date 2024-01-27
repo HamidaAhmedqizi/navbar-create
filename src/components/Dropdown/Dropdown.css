@@ -2,24 +2,19 @@
     border-radius: 10px;
     width: 9.6rem;
     position: absolute;
-    top: 67px;
+    /* top: 147px; */
     list-style: none;
-    text-align: start;
     padding: 2rem 0;
     z-index: 1000;
 }
 
 .services-submenu li {
-    background: rgb(0, 212, 212);
+    background: #936639;
     cursor: pointer;
 }
 
 .services-submenu li a:hover {
-    background: rgb(0, 175, 175);
-}
-
-.services-submenu.clicked {
-    display: none;
+    background: #414833;
 }
 
 .submenu-item {
@@ -36,20 +31,17 @@
     .services-submenu {
         width: 15rem;
         left: 50%;
-        transform: translateX(-50%);
-        position: absolute;
-        top: 366px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
         list-style: none;
         text-align: center;
         height: 15rem;
+        position: static;
+        flex-direction: column;
     }
 
     .services-submenu li a {
-        font-size: 32px;   
+        font-size: 27px;
     }
 
 }

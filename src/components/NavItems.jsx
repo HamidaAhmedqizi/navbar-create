@@ -18,7 +18,27 @@ export const navItems = [
     title: "Services",
     path: "./services",
     cName: "nav-item",
-    icon: <IoChevronDownSharp />
+    icon: <IoChevronDownSharp />,
+    dropdownMenu: [
+      {
+        id: 1,
+        title: "Unity",
+        path: "./unity",
+        cName: "submenu-item",
+      },
+      {
+        id: 2,
+        title: "EH Trade",
+        path: "./ehtrade",
+        cName: "submenu-item",
+      },
+      {
+        id: 3,
+        title: "Yusif-um MMC",
+        path: "./yusifummmc",
+        cName: "submenu-item",
+      },
+    ],
   },
   {
     id: 4,
@@ -26,26 +46,4 @@ export const navItems = [
     path: "./contact",
     cName: "nav-item",
   },
-];
-
-export const serviceDropdown = [
-  {
-    id: 1,
-    title: "Unity",
-    path: "./unity",
-    cName: "submenu-item",
-  },
-  {
-    id: 2,
-    title: "EH Trade",
-    path: "./ehtrade",
-    cName: "submenu-item",
-  },
-  {
-    id: 3,
-    title: "Yusif-um MMC",
-    path: "./yusifummmc",
-    cName: "submenu-item",
-  },
-
 ];
