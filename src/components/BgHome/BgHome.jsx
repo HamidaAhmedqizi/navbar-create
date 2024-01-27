@@ -2,27 +2,31 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { Autoplay, EffectFade } from "swiper/modules";
-import img1 from "../../../public/1.jpg";
-import Img2 from "../../../public/2.jpg";
-import Img3 from "../../../public/3.jpg";
+import img1 from "../../../src/images/Consulting_Image.jpg";
+import Img2 from "../../../src/images/trade.jpg"
+import Img3 from "../../../src/images/paint_company.jpg";
 import "../BgHome/BgHome.css";
+import { Link } from "react-router-dom";
 
 const BgHome = () => {
   const slides = [
     {
-      title: "Your Luxury Hotel For Vacation",
+      title: "Unity",
       bg: img1,
-      btnText: "See our rooms",
+      btnText: "Sirket Haqqinda",
+      link: 'unity'
     },
     {
-      title: "Rooms with a beautiful view",
+      title: "EH Trade",
       bg: Img2,
-      btnText: "See our rooms",
+      btnText: "Sirket Haqqinda",
+      link: 'ehtrade'
     },
     {
-      title: "Quality and big hotel",
+      title: "Yusif-um MMC",
       bg: Img3,
-      btnText: "See our rooms",
+      btnText: "Sirket Haqqinda",
+      link: 'yusifummmc'
     },
   ];
 
@@ -38,7 +42,7 @@ const BgHome = () => {
       className="swiper_container"
     >
       {slides.map((slide, index) => {
-        const { title, bg, btnText } = slide;
+        const { title, bg, btnText, link } = slide;
 
         return (
           <SwiperSlide
@@ -47,14 +51,16 @@ const BgHome = () => {
           >
             <div className="text_title_cont">
               <div className="text_bg">
-                Just Enjoy and relax
+                Company
               </div>
               <h1 className="title_bg">
                 {title}
               </h1>
-              <button className="btn_bg">
-                {btnText}
-              </button>
+              <Link to={`/${link}`}>
+                <button className="btn_bg">
+                  {btnText}
+                </button>
+              </Link>
             </div>
             <div className="image_container">
               <img className="bg-img" src={bg} alt="" />

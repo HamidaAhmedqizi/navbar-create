@@ -31,26 +31,20 @@ export const navItems = [
 export const serviceDropdown = [
   {
     id: 1,
-    title: "Marketing",
-    path: "./marketing",
+    title: "Unity",
+    path: "./unity",
     cName: "submenu-item",
   },
   {
     id: 2,
-    title: "Consulting",
-    path: "./consulting",
+    title: "EH Trade",
+    path: "./ehtrade",
     cName: "submenu-item",
   },
   {
     id: 3,
-    title: "Design",
-    path: "./design",
-    cName: "submenu-item",
-  },
-  {
-    id: 4,
-    title: "Development",
-    path: "./development",
+    title: "Yusif-um MMC",
+    path: "./yusifummmc",
     cName: "submenu-item",
   },
 
