@@ -33,7 +33,7 @@
 }
 
 .nav-item a:hover {
-    background: rgb(0, 212, 212);
+    background-color: #c2c5aa;
 }
 
 .buttons_cont {
@@ -50,7 +50,7 @@
     align-items: center;
     font-size: 1.5rem;
     color: white;
-    background: rgb(0, 212, 212);
+    background-color: #c2c5aa;
     border-radius: 5px;
     transition: 0.3s all ease-out;
     cursor: pointer;
@@ -62,7 +62,7 @@
 }
 
 .bars__icon:hover {
-    color: rgb(0, 212, 212);
+    color: #c2c5aa;
     background: white;
 }
 
@@ -105,7 +105,7 @@
         gap: 20px;
         top: 100px;
         /* right: 6%; */
-        background: rgb(29, 86, 86);
+        background-color: #9a9e7c;
         width: 100%;
         height: calc(100vh - 100px);
         padding: 20px;

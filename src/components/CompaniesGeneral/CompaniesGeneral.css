@@ -18,6 +18,7 @@
 .Companies_General_h1 {
     font-size: 50px;
     letter-spacing: 2.5px;
+    text-align: center;
 }
 
 .Companies_General_card {
@@ -81,4 +82,24 @@
     font-family: sans-serif;
     cursor: pointer;
     font-size: 21px;
+}
+
+
+/** Responsive */
+
+
+@media(max-width: 750px) {
+
+    .Companies_General_h1 {
+        font-size: 40px;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .Companies_General_h1 {
+        font-size: 35px;
+    }
+
 }
