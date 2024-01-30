@@ -25,18 +25,23 @@
     display: flex;
     list-style: none;
     margin-right: 2rem;
+    gap: 34px;
 }
 
 .nav-item a {
     text-decoration: none;
     color: white;
     font-size: 1.1rem;
-    padding: 6px 16px;
     border-radius: 5px;
 }
 
+.nav-item a:active {
+    color: red;
+}
+
 .nav-item a:hover {
-    background-color: #c2c5aa;
+    /* background-color: #c2c5aa; */
+    color: red;
 }
 
 .buttons_cont {
