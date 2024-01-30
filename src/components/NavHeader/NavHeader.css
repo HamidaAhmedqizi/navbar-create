@@ -1,6 +1,10 @@
 .nav_Header_container {
     background-color: #c2c5aa;
     padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .nav_Header_bg {

@@ -15,8 +15,8 @@ export const navItems = [
   },
   {
     id: 3,
-    title: "Services",
-    path: "./services",
+    title: "Companies",
+    path: "./",
     cName: "nav-item",
     icon: <IoChevronDownSharp />,
     dropdownMenu: [
