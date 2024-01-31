@@ -1,0 +1,141 @@
+.unity_bg {
+    padding: 5rem 8rem;
+}
+
+.unity_bg-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.unity_bg-container_left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.unity_bg-container_left .unity_bg-h1 {
+    font-size: 66px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+.unity_bg-container_left .unity_bg_text-p {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    max-width: 650px;
+}
+
+.unity_bg-container_left .unity_bg_button {
+    width: 250px;
+    height: 36px;
+    background-color: red;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.24s ease-in;
+}
+
+.unity_bg-container_left .unity_bg_button:hover {
+    color: red;
+    border: 1px solid red;
+    background-color: #fff;
+}
+
+@media(max-width: 1250px) {
+
+    .unity_bg {
+        padding: 5rem 4rem;
+    }
+
+}
+
+@media(max-width: 1150px) {
+
+    .unity_bg {
+        padding: 5rem 2rem;
+    }
+
+}
+
+@media(max-width: 1100px) {
+
+    .unity_bg-container_left .unity_bg-h1 {
+        font-size: 46px;
+    }
+
+    .unity_bg-container_left .unity_bg_text-p {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width: 900px) {
+
+    .unity_bg-container_left .unity_bg-h1 {
+        font-size: 36px;
+    }
+
+}
+
+@media(max-width: 840px) {
+
+    .unity_bg-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .unity_bg-container_left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .unity_bg-container_left .unity_bg-h1 {
+        text-align: center;
+    }
+    
+    .unity_bg-container_left .unity_bg_text-p {
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .unity_bg-container_left .unity_bg-h1 {
+        font-size: 30px;
+    }
+
+    .unity_bg-container_left .unity_bg_text-p {
+        font-size: 14px;
+        letter-spacing: 1.2px;
+    }
+
+}
+
+@media(max-width: 400px) {
+
+    .unity_bg-container_left .unity_bg-h1 {
+        font-size: 27px;
+    }
+
+    .unity_bg-container_left .unity_bg_text-p {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+
+    .unity_bg-container_left .unity_bg_button {
+        width: 200px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+}
