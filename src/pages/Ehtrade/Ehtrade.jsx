@@ -1,5 +1,4 @@
 import React from 'react';
-import './Ehtrade.css';
 
 const Ehtrade = () => {
   return (

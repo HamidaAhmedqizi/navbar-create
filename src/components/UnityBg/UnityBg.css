@@ -88,6 +88,8 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
+/** Responsive */
+
 @media(max-width: 1250px) {
 
     .unity_bg {
@@ -119,7 +121,7 @@
 @media screen and (max-width: 1024px) {
 
     .header__content {
-        width: 76%;
+        width: 90%;
     }
 
 }
@@ -177,7 +179,7 @@
 
     .header__content {
         width: var(--container-width-md);
-        padding: 3rem 0;
+        padding: 4rem 1rem;
     }
 
     .header__content p {
