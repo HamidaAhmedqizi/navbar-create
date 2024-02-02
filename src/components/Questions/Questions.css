@@ -1,0 +1,27 @@
+.faqs__wrapper{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 5rem;
+    align-items: flex-start;
+}
+
+/** Responsive */
+
+@media screen and (max-width:1024px) {
+
+    .faqs__wrapper{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .faqs__wrapper{
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+}

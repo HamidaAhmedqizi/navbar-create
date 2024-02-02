@@ -1,0 +1,41 @@
+.faq {
+    background: transparent;
+    border: 0.5px solid #000;
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.faq div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__icon {
+    background: transparent;
+    color: #000;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.faq p {
+    margin-top: 1.5rem;
+    color: #000;
+}
+
+.section__head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section__head span {
+    background: transparent;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: #c2c5aa;
+    font-size: 1.5rem;
+}
