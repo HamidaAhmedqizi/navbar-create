@@ -1,8 +1,11 @@
 import React from 'react';
+import EhTradeCards from '../../components/EHTradeCards';
 
 const Ehtrade = () => {
   return (
-    <div>Ehtrade</div>
+    <div>
+      <EhTradeCards/>
+    </div>
   )
 }
 
